@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding-left: 75px;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.task-name {
+  font-weight: bold;
+}
+
+.task-priority {
+  font-style: italic;
+}
+
+.task-item.high {
+  background-color: #ffcccc;
+  color: #a00;
+}
+
+.task-item.medium {
+  background-color: #ffffcc;
+  color: #a80;
+}
+
+.task-item.low {
+  background-color: #ccffcc;
+  color: #080;
+}
