@@ -1,5 +1,6 @@
 import React from 'react';
 import Child from './child';
+import PropTypes from "prop-types" 
 
 const Parent = ({ family }) => {
   return (
@@ -11,6 +12,13 @@ const Parent = ({ family }) => {
       ))}
     </div>
   );
+};
+
+Parent.propTypes = {
+  family: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    children: PropTypes.arrayOf(PropTypes.object).isRequired,
+  }).isRequired,
 };
 
 export default Parent;
