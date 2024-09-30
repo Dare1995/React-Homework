@@ -1,4 +1,3 @@
-import React from 'react';
 import Grandchild from './grandchild';
 import PropTypes from "prop-types"
 
