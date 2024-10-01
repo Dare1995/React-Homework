@@ -4,8 +4,8 @@ import RandomUserFetcher from "./components/randomuserfetcher";
 const App = () => {
   return (
     <div>
-      <DynamicCounter />
-      {/* <RandomUserFetcher /> */}
+      {/* <DynamicCounter /> */}
+      <RandomUserFetcher />
     </div>
   );
 };

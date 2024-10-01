@@ -15,7 +15,7 @@ const RandomUserFetcher = () => {
 
   return (
     <div className="container">
-      <h1>Random User Fetcher</h1>
+      <h1>User Fetcher</h1>
       <button onClick={fetchRandomUser} className="button">
         Get Random User
       </button>
