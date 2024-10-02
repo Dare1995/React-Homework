@@ -17,7 +17,7 @@ const DynamicCounter = () => {
     }, [counter]);
 
     const increment = () => setCounter(prev => prev + 1)
-    const decrement = () => setCounter(prev => prev - 1)
+    const decrement = () => setCounter(prev => (prev > -10 ? prev - 1 : prev));
     const reset = () => setCounter(0);
 
     return (
