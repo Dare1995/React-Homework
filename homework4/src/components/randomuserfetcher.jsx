@@ -1,31 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import './randomuserfetcher.css';
 
 const RandomUserFetcher = () => {
   const [user, setUser] = useState(null);
+  const [randomId, setRandomId] = useState(null);
 
-  const fetchRandomUser = async () => {
-    const randomId = Math.floor(Math.random() * 10) + 1;
-    const response = await fetch(
-      `https://jsonplaceholder.typicode.com/users/${randomId}`
-    );
-    const data = await response.json();
-    setUser(data);
+  useEffect(() => {
+    if (randomId !== null) {
+      const fetchUser = async () => {
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${randomId}`);
+        const data = await response.json();
+        setUser(data);
+      };
+      fetchUser();
+    }
+  }, [randomId]);
+
+  const handleClick = () => {
+    const id = Math.floor(Math.random() * 10) + 1;
+    setRandomId(id);
   };
 
   return (
     <div className="container">
-      <h1>User Fetcher</h1>
-      <button onClick={fetchRandomUser} className="button">
+      <button className="button" onClick={handleClick}>
         Get Random User
       </button>
-
+      
       {user && (
-        <div className="userCard">
-          <h2>{user.name}</h2>
+        <div className="userInfo">
+          <p><strong>Name:</strong> {user.name}</p>
           <p><strong>City:</strong> {user.address.city}</p>
-          <p><strong>Phone:</strong> {user.phone}</p>
-          <p><strong>Company:</strong> {user.company.name}</p>
+          <p><strong>Phone Number:</strong> {user.phone}</p>
+          <p><strong>Company Name:</strong> {user.company.name}</p>
         </div>
       )}
     </div>
