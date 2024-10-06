@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.color-picker-container {
+  text-align: center;
+  font-size: 20px;
+}
+
+.color-display-box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ccc;
+  background-color: white;
+}
+
+.color-button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+}
+
+.custom-color-container {
+  margin-top: 20px;
+}
+
+.custom-color-input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.add-color-button {
+  padding: 5px 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
