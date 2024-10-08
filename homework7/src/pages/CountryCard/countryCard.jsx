@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './countryCard.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./countryCard.css";
 
 const CountryCard = ({ country }) => {
   return (

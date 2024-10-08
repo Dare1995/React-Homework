@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import './CountryDetail.css';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import "./countryDetail.css";
 
 const CountryDetail = () => {
   const { name } = useParams();
@@ -10,7 +10,7 @@ const CountryDetail = () => {
     fetch(`https://restcountries.com/v3.1/name/${name}`)
       .then((response) => response.json())
       .then((data) => setCountry(data[0]))
-      .catch((error) => console.error('Error fetching country details:', error));
+      .catch((error) => console.error("Error fetching country details:", error));
   }, [name]);
 
   if (!country) return <p>Loading...</p>;
