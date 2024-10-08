@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.country-detail {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .detail-flag {
+    width: 200px;
+    height: auto;
+  }
+  
+  .maps-link {
+    color: #007bff;
+    text-decoration: none;
+  }
