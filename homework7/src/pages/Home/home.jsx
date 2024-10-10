@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CountryCard from "../pages/CountryCard/countryCard";
+import CountryCard from "../../components/CountryCard/countryCard";
 import "./home.css";
 
 const Home = () => {
