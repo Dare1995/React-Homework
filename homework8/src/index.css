@@ -1,0 +1,36 @@
+nav {
+  background-color: #eee;
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.app {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+button {
+  margin-left: 10px;
+}
