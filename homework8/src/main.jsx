@@ -3,7 +3,7 @@ import App from "./App.jsx"
 import "./index.css"
 import { BrowserRouter } from "react-router-dom"
 import { AuthProvider } from "./context/authContext.jsx"
-import { TodoProvider } from "./context/TodoContext.jsx"
+import { TodoProvider } from "./context/todoContext.jsx"
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

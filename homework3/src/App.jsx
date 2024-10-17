@@ -11,7 +11,7 @@ const moodEmojiMap = {
 };
 
 function App() {
-  const [currentMood, setCurrentMood] = useState(null);
+  const [currentMood, setCurrentMood] = useState(null); // probaj da narpavish arrow function!
 
   return (
     <div>

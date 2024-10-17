@@ -7,8 +7,8 @@
 // import Profile from "./pages/profile";
 // import ProtectedRoute from "./pages/protectedRoute";
 // import NotFound from "./pages/notFound";
-import { TodoProvider } from "./context/TodoContext";
-import TodoList from "./components/todoList"
+import { TodoProvider } from "./context/todoContext";
+import TodoList from "./components/todoList";
 import AddTodo from "./components/addTodo";
 
 // const App = () => {
