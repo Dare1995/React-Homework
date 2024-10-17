@@ -1,11 +1,11 @@
 import { MAKE_GUESS, START_NEW_GAME } from "../actions/gameActions";
 
 export const initialState = {
-    targetNumber: Math.floor(Math.random() * 100) + 1,
-    guess: [],
-    attempts: 0,
-    feedback: "",
-  };
+  targetNumber: Math.floor(Math.random() * 100) + 1,
+  guess: [],
+  attempts: 0,
+  feedback: "",
+};
 
 export const gameReducer = (state = initialState, action) => {
   switch (action.type) {
