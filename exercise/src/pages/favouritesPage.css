@@ -1,0 +1,15 @@
+.favorites-page {
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorites-list p {
+  font-size: 1.2em;
+  color: #555;
+}

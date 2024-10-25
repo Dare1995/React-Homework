@@ -1,0 +1,12 @@
+.characters-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.character-card {
+  margin: 10px;
+  width: 180px;
+}

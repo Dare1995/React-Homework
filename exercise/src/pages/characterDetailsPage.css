@@ -1,0 +1,22 @@
+.character-details {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .character-details img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .details-info {
+    margin-top: 10px;
+  }
+  
+  .details-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
