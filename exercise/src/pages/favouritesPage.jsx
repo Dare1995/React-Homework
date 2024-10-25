@@ -4,7 +4,7 @@ import CharacterCard from "../components/CharacterCard";
 import "./favouritesPage.css";
 
 const FavoritesPage = () => {
-  const favorites = useSelector(state => state.characters.favorites); // Ensure this path matches your reducer
+  const favorites = useSelector(state => state.characters.favorites);
 
   return (
     <div className="favorites-page">
