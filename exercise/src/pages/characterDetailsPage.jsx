@@ -7,27 +7,25 @@ import "./characterDetailsPage.css"
 const CharacterDetailsPage = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
-    const character = useSelector(state => state.characters.selectedCharacter);
+    const characterDetails = useSelector(state => state.characters.characterDetails);
 
     useEffect(() => {
         dispatch(fetchCharacterDetails(id));
     }, [dispatch, id]);
 
-    return character ? (
-        <div className="character-details">
-            <img src={character.image} alt={character.name} />
-            <div className="details-info">
-                <h3>{character.name}</h3>
-                <p><strong>Status:</strong> {character.status}</p>
-                <p><strong>Species:</strong> {character.species}</p>
-                <p><strong>Gender:</strong> {character.gender}</p>
-                <p><strong>Origin:</strong> {character.origin.name}</p>
-                <p><strong>Location:</strong> {character.location.name}</p>
-            </div>
+    if (!characterDetails) return <p>Loading...</p>;
+
+    return (
+        <div>
+            <img src={characterDetails.image} alt={characterDetails.name} />
+            <h2>{characterDetails.name}</h2>
+            <p>Species: {characterDetails.species}</p>
+            <p>Gender: {characterDetails.gender}</p>
+            <p>Origin: {characterDetails.origin?.name}</p>
+            <p>Location: {characterDetails.location?.name}</p>
         </div>
-    ) : (
-        <p>Loading...</p>
     );
 };
 
 export default CharacterDetailsPage;
+
